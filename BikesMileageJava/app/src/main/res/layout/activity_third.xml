@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#235F57"
+    tools:context=".ThirdActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/radius"/>
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="234dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="290dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="kcal"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="How many kilocalories do you want to burn ?"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/nbcalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="Which sport do you will practice ?"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp">
+
+        <RadioButton
+            android:id="@+id/ToFromWork"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="1dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="-10dp"
+            android:text="To/From Work (Self Selected Pace)" />
+        <RadioButton
+            android:id="@+id/Mountain"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="1dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:layout_gravity="center"
+            android:text="Mountain (Uphill and Downhill)"
+         />
+
+
+        <RadioButton
+            android:id="@+id/Leisure"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="1dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:layout_gravity="center"
+            android:text="Leisure (around 14km/h)" />
+
+        <RadioButton
+            android:id="@+id/Vigorous"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="1dp"
+
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:layout_gravity="center"
+            android:text=" Vigorous (> 22 km/h)" />
+
+        <RadioButton
+            android:id="@+id/FarmRoad"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:padding="1dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:layout_gravity="center"
+            android:text="Farm or Dirty Road"
+            />
+
+        <RadioButton
+            android:id="@+id/BMX"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="1dp"
+
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_selector"
+            android:textColor="@drawable/text_color"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="BMX" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Ok"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:layout_centerHorizontal="true"
+        android:text="Ok"
+        app:backgroundTint="#235F57"
+/>
+
+    <ImageView
+        android:id="@+id/bm"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-20dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/bmlogo" />
+
+</RelativeLayout>
